@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import path
 from task2.views import func_template, ClassTemplate
 from task4.views import main, choice, cart
+from task5.views import sign_up_by_django, sign_up_by_html
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -26,4 +27,6 @@ urlpatterns = [
     path('cart/', cart),
     path('class/', ClassTemplate.as_view()),
     path('func/', func_template),
+    path('sign_up_django/', sign_up_by_django),
+    path('sign_up_html/', sign_up_by_html),
 ]
